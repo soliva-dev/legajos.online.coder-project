@@ -1,4 +1,4 @@
-/* Reset */
+/* Reseteo valores por default*/
 * {
     margin: 0;
     padding: 0;
@@ -19,18 +19,22 @@ h1 {
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 10px;
 }
 
 h2 {
     font-size: 30px;
     font-weight: 500;
-    padding: 10px;
 }
 
 p {
     font-size: 15px;
     font-weight: 400;
+    line-height: 1.5;
+}
+
+body header h1,
+body header h2,
+body header p {
     padding: 10px;
 }
 
@@ -49,6 +53,26 @@ a {
 .error404 p {
     text-align: center;
     text-transform: none;
+}
+
+footer div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer div ul li {
+    margin: 15px 0 15px 0;
+}
+
+.footer-partners img,
+.footer-rrss img  {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
+.footer-rrss img {
+    width: 30px;
 }
 
 /* index.html */
@@ -83,11 +107,32 @@ header nav a img {
     margin: 20px 0 20px 0;
 }
 
+.contenedor-main {
+    padding: 10px;
+
+}
+
+main .contenedor-funciones-sec img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+main .contenedor-clientes img {
+    width: 200px;
+    margin: 40px
+}
+
 /* funciones.html */
 
 
 /* legalidad.html */
+.contenedor-main-legales section {
+    margin: 10px; 
+}
 
+.contenedor-main-legales section ul {
+    margin: 30px;
+}
 
 /* faq.html */
 
