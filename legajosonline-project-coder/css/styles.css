@@ -5,11 +5,83 @@
     box-sizing: border-box;
 }
 
-/* Globales */
+/* Raleway Family Font - Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Globales */
+body {
+    background-color: #E8DCFC;
+    font-family: "Raleway", sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #7039f1;
+    font-weight: 400;
+}
+
+.error404 h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: none;
+}
+
+.error404 p {
+    text-align: center;
+    text-transform: none;
+}
 
 /* index.html */
+header .navegacion-principal {
+    padding: 0;
+}
 
+header nav a img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.nav-enlaces, .nav-botones {
+    text-align: center;
+    word-spacing: 50px;
+}
+
+.nav-botones {
+    word-spacing: 0;
+    padding: 30px;
+}
+
+.contenedor-principal-botones a, .nav-botones a {
+    color: #FFFFFF;
+    background-color: #824CF8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contenedor-principal-botones {
+    margin: 20px 0 20px 0;
+}
 
 /* funciones.html */
 
