@@ -112,6 +112,16 @@ header nav a img {
 
 }
 
+main .contenedor-funciones-sec img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+main .contenedor-clientes img {
+    width: 200px;
+    margin: 40px
+}
+
 /* funciones.html */
 
 
