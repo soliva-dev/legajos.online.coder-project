@@ -91,6 +91,10 @@ header nav a img {
     word-spacing: 50px;
 }
 
+.nav-enlaces a.activo {
+    font-weight: bold;
+}
+
 .nav-botones {
     word-spacing: 0;
     padding: 30px;
