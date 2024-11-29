@@ -310,8 +310,25 @@ main section form div > button {
     padding: 5px;
 }
 
+form div div input,
+textarea {
+    border: solid;
+    border-radius: 5px;
+    border-color: #7039f1;
+    border-width: 0.2;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 textarea {
     width: 100%;
+}
+
+::placeholder{
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    color: #646464;
 }
 /* Fin contacto.html */
 
