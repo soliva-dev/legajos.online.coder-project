@@ -4,12 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Fin Reseteo valores por default*/
 
-/* Raleway Family Font - Google Font */
+
+/* Family Font - Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Lato Family Font - Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Fin Family Font - Google Font */
+
 
 /* Globales */
 body {
@@ -32,6 +34,32 @@ a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 400;
+}
+
+header .navegacion-principal {
+    padding: 0;
+}
+
+header nav a img {
+    width: 50px;
+    height: auto;
+    margin: 20px;
+}
+
+.nav-enlaces,
+.nav-botones {
+    text-align: center;
+    word-spacing: 50px;
+}
+
+.nav-enlaces a.activo {
+    color: #7039f1;
+    font-weight: bold;
+}
+
+.nav-botones {
+    word-spacing: 0;
+    padding: 30px;
 }
 
 h1 {
@@ -127,34 +155,10 @@ footer div div div p {
     text-align: center;
     text-transform: none;
 }
+/* Fin Globales */
+
 
 /* index.html */
-header .navegacion-principal {
-    padding: 0;
-}
-
-header nav a img {
-    width: 50px;
-    height: auto;
-    margin: 20px;
-}
-
-.nav-enlaces,
-.nav-botones {
-    text-align: center;
-    word-spacing: 50px;
-}
-
-.nav-enlaces a.activo {
-    color: #7039f1;
-    font-weight: bold;
-}
-
-.nav-botones {
-    word-spacing: 0;
-    padding: 30px;
-}
-
 .contenedor-principal {
     text-align: center;
 }
@@ -177,7 +181,7 @@ header nav a img {
 
 main section div img {
     width: 400px;
-    height: 400px;
+    height: auto;
     margin: 5px;
 }
 
@@ -198,8 +202,11 @@ main .contenedor-clientes img {
     width: 200px;
     margin: 40px
 }
+/* Fin index.html */
+
 
 /* funciones.html */
+/* Fin funciones.html */
 
 
 /* legalidad.html */
@@ -210,20 +217,28 @@ main .contenedor-clientes img {
 .contenedor-main-legales section ul {
     margin: 30px;
 }
+/* Fin legalidad.html */
+
 
 /* faq.html */
+/* Fin faq.html */
 
 
 /* aboutus.html */
+/* Fin aboutus.html */
 
 
 /* contacto.html */
+/* Fin contacto.html */
 
 
 /* tyc.html */
+/* Fin tyc.html */
 
 
 /* login.html */
+/* Fin login.html */
 
 
 /* createaccount.html */
+/* Fin createaccount.html */
