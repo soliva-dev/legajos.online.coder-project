@@ -4,12 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Fin Reseteo valores por default*/
 
-/* Raleway Family Font - Google Font */
+
+/* Family Font - Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Lato Family Font - Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Fin Family Font - Google Font */
+
 
 /* Globales */
 body {
@@ -32,6 +34,32 @@ a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 400;
+}
+
+header .navegacion-principal {
+    padding: 0;
+}
+
+header nav a img {
+    width: 50px;
+    height: auto;
+    margin: 20px;
+}
+
+.nav-enlaces,
+.nav-botones {
+    text-align: center;
+    word-spacing: 50px;
+}
+
+.nav-enlaces a.activo {
+    color: #7039f1;
+    font-weight: bold;
+}
+
+.nav-botones {
+    word-spacing: 0;
+    padding: 30px;
 }
 
 h1 {
@@ -64,12 +92,19 @@ p {
 
 main,
 footer {
-    margin: 40px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 footer {
-    margin: 20px;
+    background-color: #b396f5;
+    padding: 50px;
+}
+
+footer hr {
+    border: 0;
+    height: 5px;
+    background: linear-gradient(to right, #7039f1, #E8DCFC);
 }
 
 footer div ul {
@@ -83,7 +118,7 @@ footer div ul li {
 
 footer div ul li a {
     color: #7039f1;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 15px;
 }
 
@@ -102,7 +137,6 @@ footer div div {
 .footer-rrss img  {
     width: 50px;
     height: auto;
-    margin: 5px;
 }
 
 footer div div div p {
@@ -117,6 +151,11 @@ footer div div div p {
     float: right;
 }
 
+.footer-rrss p {
+    text-align:left ;
+    margin-top: 20px;
+}
+
 .error404 h1 {
     font-size: 30px;
     text-align: center;
@@ -127,34 +166,10 @@ footer div div div p {
     text-align: center;
     text-transform: none;
 }
+/* Fin Globales */
+
 
 /* index.html */
-header .navegacion-principal {
-    padding: 0;
-}
-
-header nav a img {
-    width: 50px;
-    height: auto;
-    margin: 20px;
-}
-
-.nav-enlaces,
-.nav-botones {
-    text-align: center;
-    word-spacing: 50px;
-}
-
-.nav-enlaces a.activo {
-    color: #7039f1;
-    font-weight: bold;
-}
-
-.nav-botones {
-    word-spacing: 0;
-    padding: 30px;
-}
-
 .contenedor-principal {
     text-align: center;
 }
@@ -177,7 +192,7 @@ header nav a img {
 
 main section div img {
     width: 400px;
-    height: 400px;
+    height: auto;
     margin: 5px;
 }
 
@@ -198,8 +213,30 @@ main .contenedor-clientes img {
     width: 200px;
     margin: 40px
 }
+/* Fin index.html */
+
 
 /* funciones.html */
+main section .div-funciones {
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+}
+
+main section .div-otras-funciones {
+    background-color: #824CF8;
+    color: #FFFFFF;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+main section .div-otras-funciones h3 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Fin funciones.html */
 
 
 /* legalidad.html */
@@ -210,20 +247,103 @@ main .contenedor-clientes img {
 .contenedor-main-legales section ul {
     margin: 30px;
 }
+/* Fin legalidad.html */
+
 
 /* faq.html */
+body header div input {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #646464;
+    padding: 20px;
+    margin: 20px;
+    background-color: #cbb5fd;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #7039f1;
+    width: 100%;
+}
 
+main section .div-faq {
+    border: solid;
+    border-width: 0.5;
+    border-color: #d1c0f8;
+    margin-top: 30px;
+}
 
-/* aboutus.html */
+main section div .header-faq {
+    background-color: #d1c0f8;
+    padding: 20px;
+}
+
+main section div .contenido-faq {
+    margin: 0px 30px 30px 20px;
+}
+
+main section > p,
+.datos-contactos {
+    margin: 10px;
+}
+
+.contenedor-faq-contacto a,
+.datos-contactos a {
+    color: #7039f1;
+    font-weight: 600;
+}
+/* Fin faq.html */
 
 
 /* contacto.html */
+main section form {
+    background-color: #cbb5fd;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+main section form div > button {
+    background-color: #79fdb0;
+    border: solid;
+    border-radius: 20px;
+    border-width: 0.2;
+    border-color: #009e42;
+    padding: 5px;
+}
+
+form div div input,
+textarea {
+    border: solid;
+    border-radius: 5px;
+    border-color: #7039f1;
+    border-width: 0.2;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+}
+
+::placeholder{
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    color: #646464;
+}
+/* Fin contacto.html */
+
+
+/* aboutus.html */
+/* Fin aboutus.html */
 
 
 /* tyc.html */
+/* Fin tyc.html */
 
 
 /* login.html */
+/* Fin login.html */
 
 
 /* createaccount.html */
+/* Fin createaccount.html */
