@@ -36,8 +36,8 @@
                 <a href="./funciones.html">funciones</a>
                 <a href="./legalidad.html">legalidad</a>
                 <a href="./faq.html">faq</a>
-                <a href="./aboutus.html">nosotros</a>
                 <a href="./contacto.html" class="activo">contacto</a>
+                <a href="./aboutus.html">nosotros</a>
             </nav>
     
             <nav class="nav-botones">
@@ -49,38 +49,36 @@
         <div class="contenedor-principal">
             <h1>¿Necesitas mas info?</h1>
             <p>Dejanos tus datos y nos contactaremos con vos para pasarte mas info respecto al sistema, o bien, para que agendemos una <strong>demo gratuita</strong> por video llamada.</p>
+            <p>También podes probar nuestra plataforma por 30 días <strong>gratis.</strong></p>
         </div>
     </header>
 
-    <br>
-    <hr>
-
     <main>
-        <section class="form-contacto">
+        <section>
             <form action="#" method="POST" enctype="multipart/form-data">
-                <p>Dejanos tus datos y te enviamos información y presupuesto.</p>
-                <strong><p>También puedes probar la plataforma por 30 días gratis.</p></strong>
-
-                <br>
 
                 <div class="contenido-form">
-                    <div>
-                        <label for="nombre">Nombre y apellido:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
-
-                        <label for="email">Email:</label>
+                    <div class="nombre">
+                        <label for="nombre">Nombre y apellido:</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required><br>
+                    </div>
+                    
+                    <div class="email">
+                        <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email" placeholder="Email" required><br><br>
                     </div>
 
-                    <div>
-                        <label for="nombreEmpresa">Nombre de la empresa:</label>
-                        <input type="text" id="nombreEmpresa" name="nombreEmpresa" placeholder="Nombre de la empresa" required>
-
-                        <label for="cantidadEmpleados">Cantidad de empleados:</label>
+                    <div class="nombreEmpresa">
+                        <label for="nombreEmpresa">Nombre de la empresa:</label><br>
+                        <input type="text" id="nombreEmpresa" name="nombreEmpresa" placeholder="Nombre de la empresa" required><br>
+                    </div>
+                    
+                    <div class="cantidadEmpleados">
+                        <label for="cantidadEmpleados">Cantidad de empleados:</label><br>
                         <input type="text" id="cantidadEmpleados" name="cantidadEmpleados" placeholder="Cantidad de empleados" required><br><br>
                     </div>
 
-                    <div>
+                    <div class="mensaje">
                         <label for="mensaje">Escribe tu mensaje aquí:</label><br>
                         <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe aquí tu mensaje..." required></textarea>
                     </div>
@@ -95,7 +93,7 @@
         </section>
 
         <section class="datos-contactos">
-            <p>También puedes escribirnos a <a target="_blank" href="mailto:hola@legajos.online"><strong>hola@legajos.online</strong></a> con tu consulta y un asesor de nuestro equipo se contactará contigo.</p>
+            <p>También puedes escribirnos a <a target="_blank" href="mailto:hola@legajos.online">hola@legajos.online</a> con tu consulta y un asesor de nuestro equipo se contactará contigo.</p>
         </section>        
     </main>
 

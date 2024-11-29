@@ -92,8 +92,8 @@ p {
 
 main,
 footer {
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 footer {
@@ -271,7 +271,7 @@ main section .div-faq {
     margin-top: 30px;
 }
 
-main section div h3 {
+main section div .header-faq {
     background-color: #d1c0f8;
     padding: 20px;
 }
@@ -280,23 +280,47 @@ main section div .contenido-faq {
     margin: 0px 30px 30px 20px;
 }
 
-main section > p {
+main section > p,
+.datos-contactos {
     margin: 10px;
 }
 
-.contenedor-faq-contacto a {
+.contenedor-faq-contacto a,
+.datos-contactos a {
     color: #7039f1;
     font-weight: 600;
 }
 /* Fin faq.html */
 
 
+/* contacto.html */
+main section form {
+    background-color: #cbb5fd;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+main section form > div {
+    
+}
+
+main section form div > button {
+    background-color: #79fdb0;
+    border: solid;
+    border-radius: 20px;
+    border-width: 0.2;
+    border-color: #009e42;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+}
+/* Fin contacto.html */
+
+
 /* aboutus.html */
 /* Fin aboutus.html */
-
-
-/* contacto.html */
-/* Fin contacto.html */
 
 
 /* tyc.html */
