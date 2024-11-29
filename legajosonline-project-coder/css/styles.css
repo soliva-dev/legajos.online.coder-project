@@ -47,6 +47,7 @@ h2 {
     font-size: 35px;
     font-weight: 600;
     color: #2C2C2C;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -59,17 +60,6 @@ p {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
-}
-
-.error404 h1 {
-    font-size: 30px;
-    text-align: center;
-    text-transform: none;
-}
-
-.error404 p {
-    text-align: center;
-    text-transform: none;
 }
 
 main, footer {
@@ -126,6 +116,17 @@ footer div div div p {
     float: right;
 }
 
+.error404 h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: none;
+}
+
+.error404 p {
+    text-align: center;
+    text-transform: none;
+}
+
 /* index.html */
 header .navegacion-principal {
     padding: 0;
@@ -173,9 +174,9 @@ header nav a img {
     padding: 10px;
 }
 
-.contenedor-main section div img {
-    width: 200px;
-    height: 200px;
+main section div img {
+    width: 400px;
+    height: 400px;
     margin: 5px;
 }
 
@@ -183,12 +184,12 @@ body main section div h3 {
     margin-bottom: 5px;
 }
 
-body main section h2 {
-    margin: 20px;
+main section {
+    padding: 20px;
 }
 
 main .contenedor-funciones-sec img {
-    width: 100px;
+    width: 190px;
     margin-bottom: 10px;
 }
 
