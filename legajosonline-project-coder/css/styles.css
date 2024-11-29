@@ -300,10 +300,6 @@ main section form {
     border-radius: 5px;
 }
 
-main section form > div {
-    
-}
-
 main section form div > button {
     background-color: #79fdb0;
     border: solid;
