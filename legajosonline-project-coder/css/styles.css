@@ -251,7 +251,7 @@ main section .div-otras-funciones h3 {
 
 
 /* faq.html */
-body header div .search {
+body header div input {
     text-align: left;
     font-size: 15px;
     font-weight: 600;
@@ -262,6 +262,7 @@ body header div .search {
     border-radius: 50px;
     border-style: solid;
     border-color: #7039f1;
+    width: 100%;
 }
 
 main section .div-faq {
