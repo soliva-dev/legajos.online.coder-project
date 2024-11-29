@@ -51,7 +51,7 @@ h2 {
 
 h3 {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: bolder;
     color: #2C2C2C;
 }
 
@@ -74,6 +74,7 @@ p {
 
 main, footer {
     margin: 40px;
+    padding: 20px;
 }
 
 footer {
@@ -113,7 +114,7 @@ footer div div {
     margin: 5px;
 }
 
-footer .footer-rrss p {
+footer div div div p {
     font-size: 15px;
     color: #646464;
     text-align: left;
@@ -136,7 +137,8 @@ header nav a img {
     margin: 10px;
 }
 
-.nav-enlaces, .nav-botones {
+.nav-enlaces,
+.nav-botones {
     text-align: center;
     word-spacing: 50px;
 }
@@ -177,17 +179,12 @@ header nav a img {
     margin: 5px;
 }
 
-.contenedor-main section div h3 {
-    font-weight: bolder;
+body main section div h3 {
     margin-bottom: 5px;
-    color: #FFFFFF;
 }
 
-.contenedor-funciones-ppal {
-    color: #FFFFFF;
-    background-color: #824CF8;
-    padding: 20px;
-    border-radius: 10px;
+body main section h2 {
+    margin: 20px;
 }
 
 main .contenedor-funciones-sec img {
