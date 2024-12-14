@@ -37,19 +37,23 @@ a {
 }
 
 header .navegacion-principal {
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 header nav a img {
     width: 50px;
     height: auto;
-    margin: 20px;
+    margin: 10px;
 }
 
 .nav-enlaces,
 .nav-botones {
-    text-align: center;
-    word-spacing: 50px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
 .nav-enlaces a.activo {
@@ -58,8 +62,19 @@ header nav a img {
 }
 
 .nav-botones {
-    word-spacing: 0;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.nav-botones a {
+    color: #FFFFFF;
+    background-color: #824CF8;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 15px;
 }
 
 h1 {
@@ -174,10 +189,10 @@ footer div div div p {
     text-align: center;
 }
 
-.contenedor-principal-botones a, .nav-botones a {
+.contenedor-principal-botones a {
     color: #FFFFFF;
     background-color: #824CF8;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
 }
 
