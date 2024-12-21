@@ -60,7 +60,8 @@ header nav a img {
     font-weight: bold;
 }
 
-.nav-botones {
+.nav-botones,
+.cont-funciones-mas {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -68,7 +69,8 @@ header nav a img {
     padding: 10px;
 }
 
-.nav-botones a {
+.nav-botones a,
+.cont-funciones-mas {
     color: #FFFFFF;
     background-color: #824CF8;
     border-radius: 15px;
@@ -89,7 +91,7 @@ h2 {
     font-size: 35px;
     font-weight: 600;
     color: #2C2C2C;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -103,70 +105,87 @@ p {
     font-weight: 400;
 }
 
-main,
-footer {
-    margin: 10px;
-    padding: 10px;
-}
-
-footer {
+footer.contenedor-footer {
+    display: flex;
+    flex-direction: column;
     background-color: #b396f5;
-    padding: 50px;
+    padding: 25px;
 }
 
-footer hr {
-    border: 0;
-    height: 5px;
-    background: linear-gradient(to right, #7039f1, #E8DCFC);
+footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
 }
 
-footer div ul {
+footer .footer-enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-enlaces ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-footer div ul li {
-    margin: 10px 0 10px 0;
+footer .footer-enlaces li {
+    margin-bottom: 8px;
 }
 
-footer div ul li a {
+footer .footer-enlaces a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+footer .footer-enlaces .mailto {
     color: #7039f1;
     font-weight: 600;
-    font-size: 15px;
 }
 
-footer div p {
-    font-weight: 600;
-    text-align: center;
+footer .footer-enlaces a:hover {
+    color: #7039f1;
+    font-weight: bold
 }
 
-footer div div {
-    font-weight: 600;
-    text-align: center;
-    margin: 5px 0 5px 0;
+footer .footer-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    gap: 10px;
 }
 
-.footer-partners img,
-.footer-rrss img  {
-    width: 50px;
+footer .footer-partners p {
+    text-align: right;
+    margin: 0;
+}
+
+footer .footer-partners img {
+    margin: 0 10px;
+    max-width: 50px;
     height: auto;
 }
 
-footer div div div p {
-    font-size: 15px;
-    color: #646464;
-    text-align: left;
-    margin: 10px;
+footer .footer-pie {
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer-rrss img {
-    width: 30px;
-    float: right;
+footer .footer-rrss a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #1b1b1b;
+    text-decoration: none;
+    align-items: center;
 }
 
-.footer-rrss p {
-    text-align:left ;
-    margin-top: 20px;
+footer .footer-rrss a:hover {
+    color: #007bff;
 }
 
 .error404 h1 {
@@ -199,10 +218,6 @@ footer div div div p {
     text-align: center;
 }
 
-.contenedor-main {
-    padding: 10px;
-}
-
 main .contenedor-funciones-ppal h2 {
     text-align: center;
 } 
@@ -223,7 +238,7 @@ main section div img {
 }
 
 main section div h3 {
-    margin-bottom: 5px;
+    margin: 10px 0;
 }
 
 main section {
@@ -242,8 +257,12 @@ main section {
 }
 
 main .contenedor-funciones-sec img {
-    width: 190px;
+    width: 300px;
     margin-bottom: 10px;
+}
+
+main .cont-funciones-mas {
+    margin-top: 20px;
 }
 
 main .contenedor-clientes {
@@ -261,8 +280,8 @@ main .contenedor-clientes > div {
 
 main .contenedor-clientes img {
     margin: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 /* Fin index.html */
