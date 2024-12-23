@@ -26,29 +26,55 @@
 <body>
 
     <header class="navegacion-principal">
-        <nav class="nav-logo">
-            <a href="../index.html">
-                <img src="../img/logolegajostest.png" alt="Logo de Legajos Online">
-            </a>
-        </nav>
-
-        <nav class="nav-enlaces">
-            <a href="../index.html">home</a>
-            <a href="./funciones.html">funciones</a>
-            <a href="./legalidad.html">legalidad</a>
-            <a href="./faq.html">faq</a>
-            <a href="./contacto.html">contacto</a>
-            <a href="./aboutus.html">nosotros</a>
-        </nav>
-
-        <nav class="nav-botones">
-            <a href="./login.html">login</a>
-            <a href="./createaccount.html">crear cuenta</a>
-        </nav>
+        <div class="navegacion-principal">
+            <nav class="navbar fixed-top navegacion-principal">
+                <div class="container-fluid">
+                    <a class="nav-logo" href="../index.html"><img src="../img/logolegajostest.png" alt="Logo de Legajos Online"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Legajos Online</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./funciones.html">funciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./legalidad.html">legalidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./faq.html">faq</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./aboutus.html">nosotros</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas opciones</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./login.html">login</a></li>
+                                        <li><a class="dropdown-item" href="./createaccount.html">crear cuenta</a></li>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="./tyc.html">terminos y condiciones</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="error404">
+        <section class="error404 contenedor-principal">
             <h1>Error 404: Not found.</h1>
             <p>Oops! La pagina que estas buscando no existe (todavia).</p>
         </section>
