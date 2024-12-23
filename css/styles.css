@@ -48,19 +48,6 @@ header nav a img {
     margin: 10px;
 }
 
-.nav-enlaces,
-.nav-botones {
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
-}
-
-.nav-enlaces a.activo {
-    color: #7039f1;
-    font-weight: bold;
-}
-
-.nav-botones,
 .cont-funciones-mas {
     display: flex;
     flex-direction: column;
@@ -69,13 +56,28 @@ header nav a img {
     padding: 10px;
 }
 
-.nav-botones a,
 .cont-funciones-mas {
     color: #FFFFFF;
     background-color: #824CF8;
     border-radius: 15px;
     padding: 8px;
     font-size: 15px;
+}
+
+.nav-canvas,
+.nav-link {
+    background-color: #b396f5;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav-canvas-menu {
+    background-color: #824CF8;
+}
+
+.nav-canvas-menu a {
+    color: #ffffff;
+    font-weight: 600;
 }
 
 h1 {
@@ -204,6 +206,7 @@ footer .footer-rrss a:hover {
 /* index.html */
 .contenedor-principal {
     text-align: center;
+    margin-top: 60px;
 }
 
 .contenedor-principal-botones a {
