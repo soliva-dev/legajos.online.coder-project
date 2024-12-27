@@ -645,9 +645,8 @@ main section div .contenido-faq {
     margin: 0px 30px 30px 20px;
 }
 
-main section>p,
-.datos-contactos {
-    margin: 10px;
+main .datos-contactos {
+    text-align: center;
 }
 
 .contenedor-faq-contacto a,
@@ -666,17 +665,15 @@ main section form {
     border-radius: 5px;
 }
 
-main section form div>button {
+main section form div > button {
     background-color: #79fdb0;
     border: solid;
     border-radius: 20px;
     border-width: 0.2;
-    border-color: #009e42;
     padding: 5px;
 }
 
-form div div input,
-textarea {
+form div div input {
     border: solid;
     border-radius: 5px;
     border-color: #7039f1;
@@ -688,6 +685,8 @@ textarea {
 
 textarea {
     width: 100%;
+    border-radius: 8px;
+    border: none;
 }
 
 ::placeholder {
