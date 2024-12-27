@@ -565,12 +565,50 @@ header .contenedor-principal-funciones h1 {
 
 
 /* legalidad.html */
-.contenedor-main-legales section {
-    margin: 10px;
+main .contenedor-main-legales {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.contenedor-main-legales section ul {
-    margin: 30px;
+main .contenedor-main-legales p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 10px;
+}
+
+main .contenedor-main-legales ul {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+main .contenedor-main-legales ul li {
+    font-size: 17px;
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+main .contenedor-main-legales section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+main .contenedor-main-legales .tecnologia-local p,
+main .contenedor-main-legales .descargo-responsabilidad p {
+    font-style: italic;
+    font-size: 17px;
+    color: #555;
+    padding-left: 20px;
+}
+
+main .contenedor-main-legales .descargo-responsabilidad {
+    padding-top: 15px;
+    margin: 30px 0;
+}
+
+main .contenedor-main-legales section+section {
+    margin-top: 50px;
 }
 
 /* Fin legalidad.html */
@@ -662,20 +700,20 @@ textarea {
 
 
 /* aboutus.html */
-    /* se aplican estilos globales con clases error404 */
+/* se aplican estilos globales con clases error404 */
 /* Fin aboutus.html */
 
 
 /* tyc.html */
-    /* se aplican estilos globales con clases error404 */
+/* se aplican estilos globales con clases error404 */
 /* Fin tyc.html */
 
 
 /* login.html */
-    /* se aplican estilos globales con clases error404 */
+/* se aplican estilos globales con clases error404 */
 /* Fin login.html */
 
 
 /* createaccount.html */
-    /* se aplican estilos globales con clases error404 */
+/* se aplican estilos globales con clases error404 */
 /* Fin createaccount.html */
