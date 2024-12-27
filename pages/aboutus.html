@@ -31,11 +31,8 @@
                 <div class="container-fluid">
                     <a class="nav-logo" href="../index.html"><img src="../img/logolegajostest.png" alt="Logo de Legajos Online"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Legajos Online</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"aria-label="Close"></button>
-                        </div>
+                    <div class="offcanvas offcanvas-end nav-canvas" tabindex="-1" id="offcanvasNavbar"aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header"><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
@@ -58,7 +55,7 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas opciones</a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu nav-canvas-menu">
                                         <li><a class="dropdown-item" href="./login.html">login</a></li>
                                         <li><a class="dropdown-item" href="./createaccount.html">crear cuenta</a></li>
                                         <hr>
@@ -75,8 +72,9 @@
     
     <main>
         <section class="error404 contenedor-principal">
-            <h1>Error 404: Not found.</h1>
-            <p>Oops! La pagina que estas buscando no existe (todavia).</p>
+            <h1>Error 404: Page 'nosotros' not found.</h1>
+            <p>Oops! La pagina que estas buscando esta en desarrollo.</p>
+            <img src="../img/pagina-desarrollo.png" alt="Pagina en desarrollo." class="error404-img">
         </section>
     </main>
 
