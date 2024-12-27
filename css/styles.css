@@ -239,7 +239,44 @@ footer .footer-rrss a:hover {
 }
 
 .error404-img {
-    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Breakpoint de paginas en desarrollo - error404 */
+@media (max-width: 768px) {
+    .error404 h1 {
+        font-size: 1.75rem;
+    }
+
+    .error404 p {
+        font-size: 0.95rem;
+    }
+
+    .error404 {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .error404 h1 {
+        font-size: 1.5rem;
+    }
+
+    .error404 p {
+        font-size: 0.85rem;
+    }
+
+    .error404 {
+        padding: 30px 10px;
+    }
+
+    .error404-img {
+        margin: 15px auto;
+    }
 }
 /* Fin Globales */
 
