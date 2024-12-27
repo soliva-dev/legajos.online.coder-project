@@ -615,38 +615,9 @@ main .contenedor-main-legales section+section {
 
 
 /* faq.html */
-header div input {
-    text-align: left;
-    font-size: 15px;
-    font-weight: 600;
-    color: #646464;
-    padding: 20px;
-    margin: 20px;
-    background-color: #cbb5fd;
-    border-radius: 50px;
-    border-style: solid;
-    border-color: #7039f1;
-    width: 100%;
-}
-
-main section .div-faq {
-    border: solid;
-    border-width: 0.5;
-    border-color: #d1c0f8;
-    margin-top: 30px;
-}
-
-main section div .header-faq {
-    background-color: #d1c0f8;
-    padding: 20px;
-}
-
-main section div .contenido-faq {
-    margin: 0px 30px 30px 20px;
-}
-
-main .datos-contactos {
-    text-align: center;
+.accordion-item {
+    margin: 20px 0;
+    background-color: #d6c6fd;
 }
 
 .contenedor-faq-contacto a,
