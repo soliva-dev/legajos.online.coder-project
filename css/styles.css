@@ -112,36 +112,40 @@ footer.contenedor-footer {
     flex-direction: column;
     background-color: #b396f5;
     padding: 25px;
+    text-align: center;
 }
 
 footer .footer-top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0px 20px 0px 20px;
+    gap: 20px;
 }
 
 footer .footer-enlaces {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    text-align: left;
+    width: 100%;
 }
 
 footer .footer-enlaces ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 footer .footer-enlaces li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 footer .footer-enlaces a {
     text-decoration: none;
     font-weight: 500;
-    color: #2e2e2e;
+    font-size: 14px;
+    color: #7039f1;
 }
 
 footer .footer-enlaces .mailto {
@@ -155,22 +159,14 @@ footer .footer-enlaces a:hover {
 }
 
 footer .footer-partners {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 50%;
-    gap: 10px;
-}
-
-footer .footer-partners p {
-    text-align: right;
-    margin: 0;
+    text-align: center;
+    width: 100%;
 }
 
 footer .footer-partners img {
-    margin: 0 10px;
-    max-width: 50px;
-    height: auto;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
 }
 
 footer .footer-pie {
@@ -188,6 +184,47 @@ footer .footer-rrss a {
 
 footer .footer-rrss a:hover {
     color: #007bff;
+}
+
+/* Breakpoints del footer*/
+@media (max-width: 768px) {
+    footer .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-enlaces ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-partners p {
+        font-size: 14px;
+    }
+
+    footer .footer-pie {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .footer-enlaces a {
+        font-size: 12px;
+    }
+
+    footer .footer-ddrr {
+        font-size: 10px;
+    }
+
+    footer .footer-partners img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .footer-rrss a {
+        font-size: 18px;
+    }
 }
 
 .error404 h1 {
@@ -213,6 +250,13 @@ footer .footer-rrss a:hover {
     margin-top: 60px;
 }
 
+.contenedor-principal-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
 .contenedor-principal-botones a {
     color: #FFFFFF;
     background-color: #824CF8;
@@ -220,9 +264,44 @@ footer .footer-rrss a:hover {
     padding: 10px;
 }
 
-.contenedor-principal-botones {
-    margin: 20px 0 20px 0;
-    text-align: center;
+/* Breakpoint del contenedor principal de header*/
+@media (max-width: 768px) {
+    header .contenedor-principal h1 {
+        font-size: 2.5rem;
+    }
+
+    header .contenedor-principal h2 {
+        font-size: 1.25rem;
+    }
+
+    header .contenedor-principal p {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+
+    header .contenedor-principal-botones a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .contenedor-principal h1 {
+        font-size: 2rem;
+    }
+
+    header .contenedor-principal h2 {
+        font-size: 1rem;
+    }
+
+    header .contenedor-principal p {
+        font-size: 0.85rem;
+    }
+
+    header .contenedor-principal-botones a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
 }
 
 main .contenedor-funciones-ppal h2 {
@@ -289,6 +368,38 @@ main .contenedor-clientes img {
     margin: 10px;
     width: 150px;
     height: 150px;
+}
+
+/* Breakpoints del contenido dentro del main */
+@media (max-width: 768px) {
+    main .contenedor-funciones-ppal > div {
+        grid-template-columns: 1fr;
+    }
+
+    main .contenedor-funciones-sec > div:nth-child(2) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    main .contenedor-clientes > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    main .contenedor-funciones-sec > div:nth-child(2) {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    main .contenedor-clientes > div {
+        grid-template-columns: 1fr;
+    }
+
+    main .contenedor-contacto .cont-funciones-mas {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
 }
 
 /* Fin index.html */
