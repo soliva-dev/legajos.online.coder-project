@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Fin Reseteo valores por default*/
 
 
@@ -164,8 +165,8 @@ footer .footer-partners {
 }
 
 footer .footer-partners img {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: auto;
     margin: 5px;
 }
 
@@ -218,8 +219,8 @@ footer .footer-rrss a:hover {
     }
 
     footer .footer-partners img {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: auto;
     }
 
     footer .footer-rrss a {
@@ -249,11 +250,11 @@ footer .footer-rrss a:hover {
 /* Breakpoint de paginas en desarrollo - error404 */
 @media (max-width: 768px) {
     .error404 h1 {
-        font-size: 1.75rem;
+        font-size: 28px;
     }
 
     .error404 p {
-        font-size: 0.95rem;
+        font-size: 15px;
     }
 
     .error404 {
@@ -263,11 +264,11 @@ footer .footer-rrss a:hover {
 
 @media (max-width: 480px) {
     .error404 h1 {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .error404 p {
-        font-size: 0.85rem;
+        font-size: 14px;
     }
 
     .error404 {
@@ -278,6 +279,7 @@ footer .footer-rrss a:hover {
         margin: 15px auto;
     }
 }
+
 /* Fin Globales */
 
 
@@ -304,48 +306,48 @@ footer .footer-rrss a:hover {
 /* Breakpoint del contenedor principal de header*/
 @media (max-width: 768px) {
     header .contenedor-principal h1 {
-        font-size: 2.5rem;
+        font-size: 40;
     }
 
     header .contenedor-principal h2 {
-        font-size: 1.25rem;
+        font-size: 20px;
     }
 
     header .contenedor-principal p {
-        font-size: 0.95rem;
+        font-size: 15px;
         max-width: 100%;
     }
 
     header .contenedor-principal-botones a {
-        font-size: 0.9rem;
+        font-size: 14px;
         padding: 8px 15px;
     }
 }
 
 @media (max-width: 480px) {
     header .contenedor-principal h1 {
-        font-size: 2rem;
+        font-size: 32px;
     }
 
     header .contenedor-principal h2 {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     header .contenedor-principal p {
-        font-size: 0.85rem;
+        font-size: 13px;
     }
 
     header .contenedor-principal-botones a {
-        font-size: 0.85rem;
+        font-size: 13px;
         padding: 6px 10px;
     }
 }
 
 main .contenedor-funciones-ppal h2 {
     text-align: center;
-} 
+}
 
-main .contenedor-funciones-ppal > div {
+main .contenedor-funciones-ppal>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -370,7 +372,7 @@ main section {
     padding: 20px;
 }
 
-.contenedor-funciones-sec > div:nth-child(2) {
+.contenedor-funciones-sec>div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -393,7 +395,7 @@ main .contenedor-clientes {
     padding: 20px;
 }
 
-main .contenedor-clientes > div {
+main .contenedor-clientes>div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -409,27 +411,27 @@ main .contenedor-clientes img {
 
 /* Breakpoints del contenido dentro del main */
 @media (max-width: 768px) {
-    main .contenedor-funciones-ppal > div {
+    main .contenedor-funciones-ppal>div {
         grid-template-columns: 1fr;
     }
 
-    main .contenedor-funciones-sec > div:nth-child(2) {
+    main .contenedor-funciones-sec>div:nth-child(2) {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
-    main .contenedor-clientes > div {
+    main .contenedor-clientes>div {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    main .contenedor-funciones-sec > div:nth-child(2) {
+    main .contenedor-funciones-sec>div:nth-child(2) {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    main .contenedor-clientes > div {
+    main .contenedor-clientes>div {
         grid-template-columns: 1fr;
     }
 
@@ -443,36 +445,101 @@ main .contenedor-clientes img {
 
 
 /* funciones.html */
-main section .div-funciones {
-    width: 400px;
+header .contenedor-principal-funciones {
+    text-align: center;
+    margin: 60px auto;
+    margin-bottom: 0;
+    max-width: 1200px;
+}
+
+header .contenedor-principal-funciones h1 {
+    grid-column: span 2;
+    text-align: center;
+}
+
+main section .contenedor-div-otras-funciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.div-otras-funciones {
+    background: #f9f9f9;
+    padding: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.div-otras-funciones-5 {
+    grid-column: span 2;
+    background: #f9f9f9;
+    padding: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.div-otras-funciones img {
+    max-width: 100%;
     height: auto;
-    margin: 5px;
-    text-align: center;
+    margin-bottom: 16px;
 }
 
-main section .div-otras-funciones {
-    background-color: #824CF8;
-    color: #FFFFFF;
-    margin-top: 30px;
-    padding: 30px;
+.div-otras-funciones h3 {
+    margin: 8px 0;
 }
 
-main section .div-otras-funciones h3 {
-    color: #FFFFFF;
-    margin-bottom: 10px;
-    text-align: center;
+/* Breakpoints para otras funciones */
+@media (max-width: 768px) {
+    .contenedor-div-otras-funciones {
+        grid-template-columns: 1fr;
+    }
+
+    .div-otras-funciones-5 {
+        grid-column: span 1;
+    }
+
+    .div-otras-funciones {
+        padding: 16px;
+    }
+
+    .div-otras-funciones h3 {
+        font-size: 19px;
+    }
 }
+
+@media (max-width: 480px) {
+    .contenedor-otras-funciones h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .div-otras-funciones {
+        padding: 12px;
+    }
+
+    .div-otras-funciones h3 {
+        font-size: 16px;
+    }
+
+    .div-otras-funciones p {
+        font-size: 14px;
+    }
+}
+
 /* Fin funciones.html */
 
 
 /* legalidad.html */
 .contenedor-main-legales section {
-    margin: 10px; 
+    margin: 10px;
 }
 
 .contenedor-main-legales section ul {
     margin: 30px;
 }
+
 /* Fin legalidad.html */
 
 
@@ -507,7 +574,7 @@ main section div .contenido-faq {
     margin: 0px 30px 30px 20px;
 }
 
-main section > p,
+main section>p,
 .datos-contactos {
     margin: 10px;
 }
@@ -517,6 +584,7 @@ main section > p,
     color: #7039f1;
     font-weight: 600;
 }
+
 /* Fin faq.html */
 
 
@@ -527,7 +595,7 @@ main section form {
     border-radius: 5px;
 }
 
-main section form div > button {
+main section form div>button {
     background-color: #79fdb0;
     border: solid;
     border-radius: 20px;
@@ -551,11 +619,12 @@ textarea {
     width: 100%;
 }
 
-::placeholder{
+::placeholder {
     font-family: "Raleway", sans-serif;
     text-align: left;
     color: #646464;
 }
+
 /* Fin contacto.html */
 
 
