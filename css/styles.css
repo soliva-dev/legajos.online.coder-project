@@ -615,39 +615,9 @@ main .contenedor-main-legales section+section {
 
 
 /* faq.html */
-header div input {
-    text-align: left;
-    font-size: 15px;
-    font-weight: 600;
-    color: #646464;
-    padding: 20px;
-    margin: 20px;
-    background-color: #cbb5fd;
-    border-radius: 50px;
-    border-style: solid;
-    border-color: #7039f1;
-    width: 100%;
-}
-
-main section .div-faq {
-    border: solid;
-    border-width: 0.5;
-    border-color: #d1c0f8;
-    margin-top: 30px;
-}
-
-main section div .header-faq {
-    background-color: #d1c0f8;
-    padding: 20px;
-}
-
-main section div .contenido-faq {
-    margin: 0px 30px 30px 20px;
-}
-
-main section>p,
-.datos-contactos {
-    margin: 10px;
+.accordion-item {
+    margin: 20px 0;
+    background-color: #d6c6fd;
 }
 
 .contenedor-faq-contacto a,
@@ -666,17 +636,15 @@ main section form {
     border-radius: 5px;
 }
 
-main section form div>button {
+main section form div > button {
     background-color: #79fdb0;
     border: solid;
     border-radius: 20px;
     border-width: 0.2;
-    border-color: #009e42;
     padding: 5px;
 }
 
-form div div input,
-textarea {
+form div div input {
     border: solid;
     border-radius: 5px;
     border-color: #7039f1;
@@ -688,6 +656,8 @@ textarea {
 
 textarea {
     width: 100%;
+    border-radius: 8px;
+    border: none;
 }
 
 ::placeholder {

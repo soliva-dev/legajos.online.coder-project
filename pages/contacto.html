@@ -76,41 +76,38 @@
         </div>
     </header>
 
-    <main>
+    <main class="contenedor-main-contacto">
+
         <section>
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form class="row g-3" action="#" method="POST" enctype="multipart/form-data">
 
-                <div class="contenido-form">
-                    <div class="nombre">
-                        <label for="nombre">Nombre y apellido: </label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ej.: Pepito Juarez" required>
-                    </div>
-                    
-                    <div class="email">
-                        <label for="email">Email: </label>
-                        <input type="email" id="email" name="email" placeholder="Ej.: email@email.com" required>
-                    </div>
-
-                    <div class="nombreEmpresa">
-                        <label for="nombreEmpresa">Nombre de la empresa: </label>
-                        <input type="text" id="nombreEmpresa" name="nombreEmpresa" placeholder="Ej.: Empresa SRL" required>
-                    </div>
-                    
-                    <div class="cantidadEmpleados">
-                        <label for="cantidadEmpleados">Cantidad de empleados: </label>
-                        <input type="text" id="cantidadEmpleados" name="cantidadEmpleados" placeholder="Ej.: 350" required>
-                    </div>
-
-                    <div class="mensaje">
-                        <label for="mensaje">Escribe tu mensaje aquí: </label>
-                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe aquí tu mensaje..." required></textarea>
-                    </div>
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Jose Rodriguez">
                 </div>
 
-                <br>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="jose.email@email.com">
+                </div>
 
-                <div class="form-boton">
-                    <button type="submit">Enviar formulario</button>
+                <div class="col-12">
+                    <label for="nombreEmpresa" class="form-label">Nombre de tu empresa</label>
+                    <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre Empresa S.R.L.">
+                </div>
+
+                <div class="col-12">
+                    <label for="cantidadEmpleados" class="form-label">Cantidad de empleados</label>
+                    <input type="text" class="form-control" id="cantidadEmpleados" placeholder="125 empleados">
+                </div>
+
+                <div class="col-md-12">
+                    <label for="mensaje" class="form-label"> Escribe tu mensaje aquí </label>
+                    <textarea id="mensaje" name="mensaje" rows="5"  placeholder="  Escribe aquí tu mensaje..." required></textarea>
+                </div>
+
+                <div class="col-12 form-boton">
+                    <button type="submit" class="btn btn-primary">Enviar formulario</button>
                 </div>
             </form>
         </section>
