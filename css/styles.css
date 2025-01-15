@@ -49,22 +49,6 @@ header nav a img {
     margin: 10px;
 }
 
-.cont-funciones-mas {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    padding: 10px;
-}
-
-.cont-funciones-mas {
-    color: #FFFFFF;
-    background-color: #824CF8;
-    border-radius: 15px;
-    padding: 8px;
-    font-size: 15px;
-}
-
 .nav-canvas,
 .nav-link {
     background-color: #b396f5;
@@ -384,6 +368,22 @@ main section {
 main .contenedor-funciones-sec img {
     width: 300px;
     margin-bottom: 10px;
+}
+
+.cont-funciones-mas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.cont-funciones-mas {
+    color: #FFFFFF;
+    background-color: #824CF8;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 15px;
 }
 
 main .cont-funciones-mas {
