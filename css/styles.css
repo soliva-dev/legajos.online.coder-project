@@ -49,11 +49,47 @@ header nav a img {
     margin: 10px;
 }
 
+/* Breakpoints para centrar el logo*/
+@media (max-width: 767px) {
+    header .navegacion-principal .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    header .navegacion-principal .nav-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header .navegacion-principal .navbar-toggler {
+        margin-left: auto;
+        position: relative;
+        z-index: 1000;
+    }
+
+    header nav a img {
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    }
+}
+
 .nav-canvas,
 .nav-link {
     background-color: #b396f5;
     color: #ffffff;
     font-weight: 600;
+}
+
+.navbar-nav .nav-link.active {
+    color: #824CF8;
+}
+
+.nav-link:hover {
+    color: #824CF8;
 }
 
 .nav-canvas-menu {
