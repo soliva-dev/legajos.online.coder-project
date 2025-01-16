@@ -392,7 +392,7 @@ main section {
     padding: 20px;
 }
 
-.contenedor-funciones-sec>div:nth-child(2) {
+main .contenedor-funciones-sec>div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -528,11 +528,11 @@ header .contenedor-principal-funciones h1 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.contenedor-otras-funciones {
+main section .contenedor-otras-funciones {
     padding: 20px;
 }
 
-.contenedor-div-otras-funciones {
+main section .contenedor-div-otras-funciones {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
