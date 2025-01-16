@@ -326,7 +326,7 @@ footer .footer-rrss a:hover {
 /* Breakpoint del contenedor principal de header*/
 @media (max-width: 768px) {
     header .contenedor-principal h1 {
-        font-size: 40;
+        font-size: 40px;
     }
 
     header .contenedor-principal h2 {
@@ -491,6 +491,18 @@ header .contenedor-principal-funciones {
 header .contenedor-principal-funciones h1 {
     grid-column: span 2;
     text-align: center;
+}
+
+/* Breakpoint del contenedor principal de funciones en header*/
+@media (max-width: 768px) {
+    header .contenedor-principal-funciones h1 {
+        font-size: 40px;
+    }
+
+    header .contenedor-principal-funciones p {
+        font-size: 15px;
+        max-width: 100%;
+    }
 }
 
 #carouselExampleDark {
