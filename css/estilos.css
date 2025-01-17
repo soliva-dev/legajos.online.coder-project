@@ -1,7 +1,4 @@
-/* Variables de colores */
 /* Family Font - Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /* Reseteo valores por default*/
 * {
   margin: 0;
@@ -192,98 +189,16 @@ main .contenedor-clientes img {
 }
 
 /* funciones.html */
-main .contenedor-funciones-ppal h2 {
-  text-align: center;
-}
-main .contenedor-funciones-ppal > div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  text-align: center;
-}
-main section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-main section div img {
-  max-width: 100%;
-  width: 400px;
-  height: auto;
-  margin: 5px;
-}
-main section div h3 {
-  margin: 10px 0;
-}
-main .contenedor-funciones-sec > div:nth-child(2) {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-  align-items: start;
-  text-align: center;
-}
-main .contenedor-funciones-sec img {
-  width: 300px;
-  margin-bottom: 10px;
-}
-main .cont-funciones-mas {
-  margin-top: 20px;
-}
-main .contenedor-clientes {
-  text-align: center;
-  padding: 20px;
-}
-main .contenedor-clientes > div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-main .contenedor-clientes img {
-  margin: 10px;
-  width: 150px;
-  height: 150px;
-}
-main .contenedor-principal-funciones {
-  text-align: center;
-  margin: 60px auto 0;
-  max-width: 1200px;
-}
-main .contenedor-principal-funciones h1 {
-  grid-column: span 2;
-  text-align: center;
-}
-main #carouselExampleDark {
-  border: 5px solid #c064fd;
-  border-radius: 10px;
-  overflow: hidden;
-}
-main #carouselExampleDark .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-}
-main #carouselExampleDark .carousel-caption h5 {
-  font-size: 20px;
-  color: #FFFFFF;
-}
-main #carouselExampleDark .carousel-caption p {
-  font-size: 15px;
-  color: #FFFFFF;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
 main section .contenedor-otras-funciones {
   padding: 20px;
 }
-main section .contenedor-otras-funciones .contenedor-div-otras-funciones {
+main section .contenedor-div-otras-funciones {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-main section .contenedor-otras-funciones .contenedor-div-otras-funciones .div-otras-funciones {
+
+.div-otras-funciones {
   background: #f9f9f9;
   padding: 24px;
   border: 1px solid #e0e0e0;
@@ -291,16 +206,18 @@ main section .contenedor-otras-funciones .contenedor-div-otras-funciones .div-ot
   text-align: center;
   transition: transform 0.3s ease;
 }
-main section .contenedor-otras-funciones .contenedor-div-otras-funciones .div-otras-funciones h3 {
-  margin: 8px 0;
-}
-main section .contenedor-otras-funciones .contenedor-div-otras-funciones .div-otras-funciones-5 {
+
+.div-otras-funciones-5 {
   grid-column: span 2;
   background: #f9f9f9;
   padding: 24px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   text-align: center;
+}
+
+.div-otras-funciones h3 {
+  margin: 8px 0;
 }
 
 /* legalidad.html */
@@ -555,69 +472,42 @@ footer .footer-rrss a:hover {
 }
 /* Breakpoints de funciones */
 @media (max-width: 768px) {
-  main .contenedor-funciones-ppal > div {
-    grid-template-columns: 1fr;
-  }
-  main .contenedor-funciones-sec > div:nth-child(2) {
+  .contenedor-div-otras-funciones {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-  main .contenedor-clientes > div {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  main .contenedor-principal-funciones h1 {
-    font-size: 40px;
-  }
-  main .contenedor-principal-funciones p {
-    font-size: 15px;
-    max-width: 100%;
-  }
-  main .contenedor-div-otras-funciones {
-    grid-template-columns: 1fr;
     gap: 1px;
   }
-  main .contenedor-div-otras-funciones .div-otras-funciones-5 {
+  .div-otras-funciones-5 {
     grid-column: span 1;
   }
-  main .contenedor-div-otras-funciones .div-otras-funciones {
+  .div-otras-funciones {
     padding: 15px;
     margin: 15px;
   }
-  main .contenedor-div-otras-funciones .div-otras-funciones h3 {
+  .div-otras-funciones h3 {
     font-size: 18px;
   }
-  main .contenedor-div-otras-funciones .div-otras-funciones p {
+  .div-otras-funciones p {
     font-size: 15px;
   }
 }
 @media (max-width: 480px) {
-  main .contenedor-funciones-sec > div:nth-child(2) {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  main .contenedor-clientes > div {
-    grid-template-columns: 1fr;
-  }
-  main .contenedor-contacto .cont-funciones-mas {
-    font-size: 14px;
-    padding: 8px 15px;
-  }
-  main .contenedor-otras-funciones h2 {
+  .contenedor-otras-funciones h2 {
     font-size: 20px;
     text-align: center;
   }
-  main .contenedor-otras-funciones .contenedor-div-otras-funciones {
-    gap: 12px;
-  }
-  main .contenedor-otras-funciones .contenedor-div-otras-funciones .div-otras-funciones {
+  .div-otras-funciones {
     padding: 12px;
     margin: 12px;
   }
-  main .contenedor-otras-funciones .contenedor-div-otras-funciones .div-otras-funciones h3 {
+  .div-otras-funciones h3 {
     font-size: 15px;
   }
-  main .contenedor-otras-funciones .contenedor-div-otras-funciones .div-otras-funciones p {
+  .div-otras-funciones p {
     font-size: 13px;
+  }
+  .contenedor-div-otras-funciones {
+    gap: 12px;
+    grid-template-columns: 1fr;
   }
 }
 /* Breakpoints del footer*/
