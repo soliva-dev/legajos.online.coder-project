@@ -136,56 +136,71 @@
 
 /* Breakpoints de funciones */
 @media (max-width: 768px) {
-    .contenedor-div-otras-funciones {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1px;
-    }
+    .contenedor-principal-funciones {
+        h1 {
+            font-size: 40px;
+        }
 
-    .div-otras-funciones-5 {
-        grid-column: span 1;
+        p {
+            font-size: 15px;
+            max-width: 100%;
+        }
     }
+}
 
-    .div-otras-funciones {
-        padding: 15px;
-        margin: 15px;
-    }
+@media (max-width: 768px) {
+    section {
+        .contenedor-div-otras-funciones {
+            grid-template-columns: 1fr;
+            gap: 1px;
+        }
 
-    .div-otras-funciones h3 {
-        font-size: 18px;
-    }
+        .div-otras-funciones-5 {
+            grid-column: span 1;
+        }
 
-    .div-otras-funciones p {
-        font-size: 15px;
+        .div-otras-funciones {
+            padding: 15px;
+            margin: 15px;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
     }
 }
 
 @media (max-width: 480px) {
-    .contenedor-otras-funciones {
-        h2 {
-            font-size: 20px;
-            text-align: center;
+    section {
+        .contenedor-otras-funciones {
+            h2 {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+
+        .div-otras-funciones {
+            padding: 12px;
+            margin: 12px;
+
+            h3 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .contenedor-div-otras-funciones {
+            gap: 12px;
         }
     }
-
-    .div-otras-funciones {
-        padding: 12px;
-        margin: 12px;
-    }
-
-    .div-otras-funciones h3 {
-        font-size: 15px;
-    }
-
-    .div-otras-funciones p {
-        font-size: 13px;
-    }
-
-    .contenedor-div-otras-funciones {
-        gap: 12px;
-        grid-template-columns: 1fr;
-    }
 }
-
 
 /* Breakpoints del footer*/
 @media (max-width: 768px) {
