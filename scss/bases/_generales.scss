@@ -21,9 +21,7 @@ header {
     }
 
     .navegacion-principal {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-center(space-between, center);
         background-color: $color-cuaternario;
     }
 
@@ -35,9 +33,8 @@ header {
 }
 
 a {
+    @include font-settings(16px, 600, $color-blanco);
     text-decoration: none;
-    color: $color-blanco;
-    font-weight: 600;
 }
 
 .nav-canvas,
