@@ -8,9 +8,7 @@ footer {
     }
 
     .footer-top {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include flex-center(column, center);
         gap: 20px;
     }
 
