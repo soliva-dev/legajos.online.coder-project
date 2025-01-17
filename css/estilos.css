@@ -527,24 +527,22 @@ footer .footer-rrss a:hover {
   section .div-otras-funciones p {
     font-size: 15px;
   }
-}
-@media (max-width: 480px) {
-  section .contenedor-otras-funciones h2 {
-    font-size: 20px;
-    text-align: center;
+  section.contenedor-otras-funciones .contenedor-div-otras-funciones {
+    grid-template-columns: 1fr !important;
+    gap: 1px !important;
   }
-  section .div-otras-funciones {
-    padding: 12px;
-    margin: 12px;
+  section.contenedor-otras-funciones .div-otras-funciones-5 {
+    grid-column: span 1 !important;
   }
-  section .div-otras-funciones h3 {
-    font-size: 15px;
+  section.contenedor-otras-funciones .div-otras-funciones {
+    padding: 15px !important;
+    margin: 15px !important;
   }
-  section .div-otras-funciones p {
-    font-size: 13px;
+  section.contenedor-otras-funciones .div-otras-funciones h3 {
+    font-size: 18px !important;
   }
-  section .contenedor-div-otras-funciones {
-    gap: 12px;
+  section.contenedor-otras-funciones .div-otras-funciones p {
+    font-size: 15px !important;
   }
 }
 /* Breakpoints del footer*/
