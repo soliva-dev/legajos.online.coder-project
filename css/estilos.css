@@ -34,7 +34,7 @@ header nav a img {
 a {
   text-decoration: none;
   color: #FFFFFF;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .nav-canvas,
@@ -80,7 +80,7 @@ h3 {
 
 p {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .error404 h1 {
@@ -368,7 +368,7 @@ footer .footer-enlaces li {
 }
 footer .footer-enlaces a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   color: #7039f1;
 }
