@@ -326,7 +326,7 @@ footer .footer-rrss a:hover {
 /* Breakpoint del contenedor principal de header*/
 @media (max-width: 768px) {
     header .contenedor-principal h1 {
-        font-size: 40;
+        font-size: 40px;
     }
 
     header .contenedor-principal h2 {
@@ -392,7 +392,7 @@ main section {
     padding: 20px;
 }
 
-.contenedor-funciones-sec>div:nth-child(2) {
+main .contenedor-funciones-sec>div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -493,6 +493,18 @@ header .contenedor-principal-funciones h1 {
     text-align: center;
 }
 
+/* Breakpoint del contenedor principal de funciones en header*/
+@media (max-width: 768px) {
+    header .contenedor-principal-funciones h1 {
+        font-size: 40px;
+    }
+
+    header .contenedor-principal-funciones p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+}
+
 #carouselExampleDark {
     border: 5px solid #c064fd;
     border-radius: 10px;
@@ -516,11 +528,11 @@ header .contenedor-principal-funciones h1 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.contenedor-otras-funciones {
+main section .contenedor-otras-funciones {
     padding: 20px;
 }
 
-.contenedor-div-otras-funciones {
+main section .contenedor-div-otras-funciones {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -627,14 +639,12 @@ main .contenedor-main-legales ul li {
 main .contenedor-main-legales section h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #2c3e50;
 }
 
 main .contenedor-main-legales .tecnologia-local p,
 main .contenedor-main-legales .descargo-responsabilidad p {
     font-style: italic;
     font-size: 17px;
-    color: #555;
     padding-left: 20px;
 }
 

@@ -1,0 +1,255 @@
+/* index.html */
+.contenedor-principal {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenedor-principal-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    a {
+        color: $color-blanco;
+        background-color: $color-principal;
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+
+main {
+    .contenedor-funciones-ppal {
+        h2 {
+            text-align: center;
+        }
+
+        >div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+
+        div {
+            img {
+                max-width: 100%;
+                width: 400px;
+                height: auto;
+                margin: 5px;
+            }
+
+            h3 {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .contenedor-funciones-sec {
+        >div:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: start;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .cont-funciones-mas {
+        margin-top: 20px;
+    }
+
+    .contenedor-clientes {
+        text-align: center;
+        padding: 20px;
+
+        >div {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        img {
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+.cont-funciones-mas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    color: $color-blanco;
+    background-color: $color-principal;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+/* funciones.html */
+main {
+    section {
+        .contenedor-otras-funciones {
+            padding: 20px;
+        }
+
+        .contenedor-div-otras-funciones {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+    }
+}
+
+.div-otras-funciones {
+    background: #f9f9f9;
+    padding: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.div-otras-funciones-5 {
+    grid-column: span 2;
+    background: #f9f9f9;
+    padding: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.div-otras-funciones h3 {
+    margin: 8px 0;
+}
+
+/* legalidad.html */
+main {
+    .contenedor-main-legales {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            padding: 0 10px;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-left: 30px;
+
+            li {
+                font-size: 17px;
+                margin-bottom: 10px;
+                list-style-type: disc;
+            }
+        }
+
+        section {
+            h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            &+section {
+                margin-top: 50px;
+            }
+        }
+
+        .tecnologia-local,
+        .descargo-responsabilidad {
+            p {
+                font-style: italic;
+                font-size: 17px;
+                padding-left: 20px;
+            }
+
+            &.descargo-responsabilidad {
+                padding-top: 15px;
+                margin: 30px 0;
+            }
+        }
+    }
+}
+
+/* faq.html */
+.accordion-item {
+    margin: 20px 0;
+    background-color: $color-secundario;
+}
+
+.contenedor-faq-contacto,
+.datos-contactos {
+    a {
+        color: $color-enlaces;
+        font-weight: 600;
+    }
+}
+
+/* contacto.html */
+main {
+    section {
+        form {
+            background-color: $color-terciario;
+            padding: 30px;
+            border-radius: 5px;
+
+            div>button {
+                background-color: #79fdb0;
+                border: solid;
+                border-radius: 20px;
+                border-width: 0.2;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+form {
+    div {
+        div {
+            input {
+                border: solid;
+                border-radius: 5px;
+                border-color: $color-enlaces;
+                border-width: 0.2;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+::placeholder {
+    font-family: $font-principal;
+    text-align: left;
+    color: #646464;
+}

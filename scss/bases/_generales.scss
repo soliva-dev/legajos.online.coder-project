@@ -1,0 +1,119 @@
+/* Family Font - Google Font */
+//@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reseteo valores por default*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globales */
+body {
+    background-color: $color-bg;
+    font-family: $font-principal;
+}
+
+header {
+
+    h1,
+    h2,
+    p,
+    div {
+        padding: 10px;
+    }
+
+    .navegacion-principal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-cuaternario;
+    }
+
+    nav a img {
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $color-blanco;
+    font-weight: 400;
+}
+
+.nav-canvas,
+.nav-link {
+    background-color: $color-cuaternario;
+    color: $color-blanco;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    .nav-link {
+
+        &.active,
+        &:hover {
+            color: $color-principal;
+        }
+    }
+}
+
+.nav-canvas-menu {
+    background-color: $color-principal;
+
+    a {
+        color: $color-blanco;
+        font-weight: 600;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    color: $color-gris;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: $color-gris;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: $color-gris;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.error404 {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        text-transform: none;
+    }
+
+    p {
+        text-align: center;
+        text-transform: none;
+    }
+}
+
+.error404-img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
