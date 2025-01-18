@@ -1,6 +1,6 @@
 /* index.html */
 .contenedor-principal {
-    text-align: center;
+    @extend %text-center;
     margin-top: 60px;
 }
 
@@ -14,14 +14,14 @@
         color: $color-blanco;
         background-color: $color-principal;
         border-radius: 15px;
-        padding: 10px;
+        @extend %padding-10;
     }
 }
 
 main {
     .contenedor-funciones-ppal {
         h2 {
-            text-align: center;
+            @extend %text-center;
         }
 
         >div {

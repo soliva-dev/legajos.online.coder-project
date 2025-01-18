@@ -17,7 +17,7 @@ header {
     h2,
     p,
     div {
-        padding: 10px;
+        @extend %padding-10;
     }
 
     .navegacion-principal {
@@ -26,9 +26,7 @@ header {
     }
 
     nav a img {
-        width: 50px;
-        height: auto;
-        margin: 10px;
+        @extend %img-size;
     }
 }
 
@@ -67,7 +65,7 @@ h1 {
     font-size: 50px;
     font-weight: 900;
     text-transform: uppercase;
-    text-align: center;
+    @extend %text-center;
     margin-top: 10px;
     color: $color-gris;
 }
@@ -76,7 +74,6 @@ h2 {
     font-size: 35px;
     font-weight: 700;
     color: $color-gris;
-    margin-bottom: 20px;
 }
 
 h3 {
@@ -93,12 +90,11 @@ p {
 .error404 {
     h1 {
         font-size: 30px;
-        text-align: center;
-        text-transform: none;
+        @extend %centered-content;
     }
 
     p {
-        text-align: center;
+        @extend %text-center;
         text-transform: none;
     }
 }
