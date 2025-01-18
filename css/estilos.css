@@ -1,5 +1,27 @@
 /* Family Font - Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.contenedor-principal-botones a, header h1,
+header h2,
+header p,
+header div {
+  padding: 10px;
+}
+
+header nav a img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+
+main .contenedor-funciones-ppal h2, .contenedor-principal, .error404 p, h1 {
+  text-align: center;
+}
+
+.error404 h1 {
+  text-align: center;
+  text-transform: none;
+}
+
 /* Reseteo valores por default*/
 * {
   margin: 0;
@@ -13,12 +35,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-header h1,
-header h2,
-header p,
-header div {
-  padding: 10px;
-}
 header .navegacion-principal {
   display: flex;
   flex-direction: space-between;
@@ -26,12 +42,6 @@ header .navegacion-principal {
   align-items: center;
   background-color: #b396f5;
 }
-header nav a img {
-  width: 50px;
-  height: auto;
-  margin: 10px;
-}
-
 a {
   font-size: 16px;
   font-weight: 600;
@@ -62,7 +72,6 @@ h1 {
   font-size: 50px;
   font-weight: 900;
   text-transform: uppercase;
-  text-align: center;
   margin-top: 10px;
   color: #2C2C2C;
 }
@@ -71,7 +80,6 @@ h2 {
   font-size: 35px;
   font-weight: 700;
   color: #2C2C2C;
-  margin-bottom: 20px;
 }
 
 h3 {
@@ -87,11 +95,8 @@ p {
 
 .error404 h1 {
   font-size: 30px;
-  text-align: center;
-  text-transform: none;
 }
 .error404 p {
-  text-align: center;
   text-transform: none;
 }
 
@@ -105,7 +110,6 @@ p {
 
 /* index.html */
 .contenedor-principal {
-  text-align: center;
   margin-top: 60px;
 }
 
@@ -119,12 +123,8 @@ p {
   color: #FFFFFF;
   background-color: #824cf8;
   border-radius: 15px;
-  padding: 10px;
 }
 
-main .contenedor-funciones-ppal h2 {
-  text-align: center;
-}
 main .contenedor-funciones-ppal > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

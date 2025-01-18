@@ -1,3 +1,4 @@
+//Variables
 $color-bg: #e8dcfc;
 $color-principal: #824cf8;
 $color-secundario: #d6c6fd;
@@ -8,3 +9,27 @@ $color-gris: #2C2C2C;
 $color-enlaces: #7039f1;
 
 $font-principal: 'Raleway', sans-serif;
+
+// Extends
+%padding-10 {
+    padding: 10px;
+}
+
+%img-size {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+%font-bold {
+    font-weight: bold;
+}
+
+%text-center {
+    text-align: center;
+}
+
+%centered-content {
+    text-align: center;
+    text-transform: none;
+}
