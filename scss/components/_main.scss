@@ -292,3 +292,19 @@ textarea {
     text-align: left;
     color: #646464;
 }
+
+/*tyc.html*/
+main {
+    .contenedor-tyc {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            padding: 0 10px;
+            text-align: left;
+        }
+    }
+}

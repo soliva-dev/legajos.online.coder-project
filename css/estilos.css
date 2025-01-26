@@ -339,6 +339,19 @@ textarea {
   color: #646464;
 }
 
+/*tyc.html*/
+main .contenedor-tyc {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .contenedor-tyc p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 10px;
+  text-align: left;
+}
+
 footer.contenedor-footer {
   display: flex;
   flex-direction: column;
@@ -547,6 +560,24 @@ footer .footer-rrss a:hover {
   }
   section.contenedor-otras-funciones .div-otras-funciones p {
     font-size: 15px !important;
+  }
+}
+/* Breakpoint de tyc*/
+@media (max-width: 768px) {
+  main .contenedor-tyc h1 {
+    font-size: 40px;
+  }
+  main .contenedor-tyc p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  main .contenedor-tyc h1 {
+    font-size: 32px;
+  }
+  main .contenedor-tyc p {
+    font-size: 13px;
   }
 }
 /* Breakpoints del footer*/

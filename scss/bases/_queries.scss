@@ -196,6 +196,38 @@
     }
 }
 
+/* Breakpoint de tyc*/
+@media (max-width: 768px) {
+    main {
+        .contenedor-tyc {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 15px;
+                max-width: 100%;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        .contenedor-tyc {
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+    }
+}
+
 /* Breakpoints del footer*/
 @media (max-width: 768px) {
     footer {
