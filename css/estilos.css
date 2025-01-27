@@ -141,7 +141,6 @@ main section div img {
   max-width: 100%;
   width: 400px;
   height: auto;
-  margin: 5px;
 }
 main section div h3 {
   margin: 10px 0;
@@ -153,6 +152,33 @@ main .contenedor-funciones-sec > div:nth-child(2) {
   justify-items: center;
   align-items: start;
   text-align: center;
+}
+main .contenedor-funciones-sec > div:nth-child(2) .p-3 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  height: 280px;
+  transition: all 0.3s ease-in-out;
+}
+main .contenedor-funciones-sec > div:nth-child(2) .p-3 img, main .contenedor-funciones-sec > div:nth-child(2) .p-3 h3 {
+  transition: all 0.3s ease-in-out;
+}
+main .contenedor-funciones-sec > div:nth-child(2) .p-3 p {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover {
+  height: auto;
+}
+main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover img, main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover h3 {
+  transform: translateY(0);
+}
+main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover p {
+  opacity: 1;
+  max-height: 500px;
 }
 main .contenedor-funciones-sec img {
   width: 300px;
@@ -292,13 +318,15 @@ main .contenedor-main-legales .descargo-responsabilidad.descargo-responsabilidad
 }
 
 /* faq.html */
-.accordion-item {
+main .search-input {
+  margin-bottom: 40px;
+}
+main .accordion-item {
   margin: 20px 0;
   background-color: #d6c6fd;
 }
-
-.contenedor-faq-contacto a,
-.datos-contactos a {
+main .contenedor-faq-contacto a,
+main .datos-contactos a {
   color: #7039f1;
   font-weight: 700;
 }

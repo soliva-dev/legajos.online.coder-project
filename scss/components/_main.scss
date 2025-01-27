@@ -43,7 +43,6 @@ main {
                 max-width: 100%;
                 width: 400px;
                 height: auto;
-                margin: 5px;
             }
 
             h3 {
@@ -60,6 +59,38 @@ main {
             justify-items: center;
             align-items: start;
             text-align: center;
+    
+            .p-3 {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                max-width: 300px;
+                height: 280px;
+                transition: all 0.3s ease-in-out;
+    
+                img, h3 {
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                p {
+                    opacity: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                &:hover {
+                    height: auto;
+                    img, h3 {
+                        transform: translateY(0);
+                    }
+    
+                    p {
+                        opacity: 1;
+                        max-height: 500px;
+                    }
+                }
+            }
         }
 
         img {
@@ -233,16 +264,22 @@ main {
 }
 
 /* faq.html */
-.accordion-item {
-    margin: 20px 0;
-    background-color: $color-secundario;
-}
-
-.contenedor-faq-contacto,
-.datos-contactos {
-    a {
-        color: $color-enlaces;
-        font-weight: 700;
+main {
+    .search-input {
+        margin-bottom: 40px;
+    }
+    
+    .accordion-item {
+        margin: 20px 0;
+        background-color: $color-secundario;
+    }
+    
+    .contenedor-faq-contacto,
+    .datos-contactos {
+        a {
+            color: $color-enlaces;
+            font-weight: 700;
+        }
     }
 }
 
