@@ -2,6 +2,17 @@
 .contenedor-principal {
     @extend %text-center;
     margin-top: 60px;
+
+    .contenedor-index {
+        background: rgb(232, 220, 252);
+        background: linear-gradient(0deg, rgba(232, 220, 252, 1) 0%, rgba(56, 15, 150, 1) 79%);
+
+        h1,
+        h2,
+        p {
+            color: $color-blanco;
+        }
+    }
 }
 
 .contenedor-principal-botones {
@@ -15,6 +26,8 @@
         background-color: $color-principal;
         border-radius: 15px;
         @extend %padding-10;
+        flex: 1 1 300px;
+        text-align: center;
     }
 }
 
@@ -59,7 +72,7 @@ main {
             justify-items: center;
             align-items: start;
             text-align: center;
-    
+
             .p-3 {
                 position: relative;
                 overflow: hidden;
@@ -67,24 +80,27 @@ main {
                 max-width: 300px;
                 height: 280px;
                 transition: all 0.3s ease-in-out;
-    
-                img, h3 {
+
+                img,
+                h3 {
                     transition: all 0.3s ease-in-out;
                 }
-    
+
                 p {
                     opacity: 0;
                     max-height: 0;
                     overflow: hidden;
                     transition: all 0.3s ease-in-out;
                 }
-    
+
                 &:hover {
                     height: auto;
-                    img, h3 {
+
+                    img,
+                    h3 {
                         transform: translateY(0);
                     }
-    
+
                     p {
                         opacity: 1;
                         max-height: 500px;
@@ -265,15 +281,12 @@ main {
 
 /* faq.html */
 main {
-    .search-input {
-        margin-bottom: 40px;
-    }
-    
+
     .accordion-item {
         margin: 20px 0;
         background-color: $color-secundario;
     }
-    
+
     .contenedor-faq-contacto,
     .datos-contactos {
         a {
