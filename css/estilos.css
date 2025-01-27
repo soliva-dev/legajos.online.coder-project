@@ -1,9 +1,6 @@
 /* Family Font - Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-.contenedor-principal-botones a, header h1,
-header h2,
-header p,
-header div {
+.contenedor-principal-botones a {
   padding: 10px;
 }
 
@@ -37,8 +34,8 @@ body {
 
 header .navegacion-principal {
   display: flex;
-  flex-direction: space-between;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   background-color: #b396f5;
 }
@@ -54,18 +51,11 @@ a {
   background-color: #b396f5;
   color: #FFFFFF;
   font-weight: 700;
+  font-size: 15px;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
   color: #824cf8;
-}
-
-.nav-canvas-menu {
-  background-color: #824cf8;
-}
-.nav-canvas-menu a {
-  color: #FFFFFF;
-  font-weight: 700;
 }
 
 h1 {
@@ -112,6 +102,15 @@ p {
 .contenedor-principal {
   margin-top: 60px;
 }
+.contenedor-principal .contenedor-index {
+  background: rgb(232, 220, 252);
+  background: linear-gradient(0deg, rgb(232, 220, 252) 0%, rgb(56, 15, 150) 79%);
+}
+.contenedor-principal .contenedor-index h1,
+.contenedor-principal .contenedor-index h2,
+.contenedor-principal .contenedor-index p {
+  color: #FFFFFF;
+}
 
 .contenedor-principal-botones {
   display: flex;
@@ -123,6 +122,8 @@ p {
   color: #FFFFFF;
   background-color: #824cf8;
   border-radius: 15px;
+  flex: 1 1 300px;
+  text-align: center;
 }
 
 main .contenedor-funciones-ppal > div {
@@ -161,7 +162,8 @@ main .contenedor-funciones-sec > div:nth-child(2) .p-3 {
   height: 280px;
   transition: all 0.3s ease-in-out;
 }
-main .contenedor-funciones-sec > div:nth-child(2) .p-3 img, main .contenedor-funciones-sec > div:nth-child(2) .p-3 h3 {
+main .contenedor-funciones-sec > div:nth-child(2) .p-3 img,
+main .contenedor-funciones-sec > div:nth-child(2) .p-3 h3 {
   transition: all 0.3s ease-in-out;
 }
 main .contenedor-funciones-sec > div:nth-child(2) .p-3 p {
@@ -173,7 +175,8 @@ main .contenedor-funciones-sec > div:nth-child(2) .p-3 p {
 main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover {
   height: auto;
 }
-main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover img, main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover h3 {
+main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover img,
+main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover h3 {
   transform: translateY(0);
 }
 main .contenedor-funciones-sec > div:nth-child(2) .p-3:hover p {
@@ -318,9 +321,6 @@ main .contenedor-main-legales .descargo-responsabilidad.descargo-responsabilidad
 }
 
 /* faq.html */
-main .search-input {
-  margin-bottom: 40px;
-}
 main .accordion-item {
   margin: 20px 0;
   background-color: #d6c6fd;
