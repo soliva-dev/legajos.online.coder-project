@@ -502,6 +502,16 @@ footer .footer-rrss a:hover {
     font-size: 14px;
     padding: 8px 15px;
   }
+  main .contenedor-principal h1 {
+    font-size: 40px;
+  }
+  main .contenedor-principal h2 {
+    font-size: 20px;
+  }
+  main .contenedor-principal p {
+    font-size: 15px;
+    max-width: 100%;
+  }
 }
 @media (max-width: 480px) {
   header .contenedor-principal h1 {
